@@ -23,7 +23,7 @@ const PortfolioGrid = ({ data = [], buttonShow }) => {
   async function buyNft(nft) {
     /* needs the user to sign the transaction, so will use Web3Provider and sign it */
     const web3Modal = new Web3Modal({
-      network: 'mainnet',
+      network: 'testnet',
       cacheProvider: true,
     });
     const connection = await web3Modal.connect();
